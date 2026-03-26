@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.theme-light {
+  --bg: #e8e4df;
+  --text-primary: #111;
+  --text-secondary: #666;
+  --text-tertiary: #999;
+  --code-bg: rgba(0, 0, 0, 0.05);
+  --code-border: rgba(0, 0, 0, 0.08);
+  --toggle-bg: rgba(0, 0, 0, 0.06);
+}
+
+.theme-dark {
+  --bg: #0a0a0f;
+  --text-primary: #f0f0f0;
+  --text-secondary: #888;
+  --text-tertiary: #555;
+  --code-bg: rgba(255, 255, 255, 0.05);
+  --code-border: rgba(255, 255, 255, 0.08);
+  --toggle-bg: rgba(255, 255, 255, 0.06);
+}
