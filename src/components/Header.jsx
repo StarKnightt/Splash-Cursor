@@ -1,7 +1,7 @@
 import { useState, useRef, useCallback } from "react";
 import { SplashCursor } from "./SplashCursor";
 
-const INSTALL_CMD = "npx shadcn@latest add splash-cursor";
+const INSTALL_CMD = "npx shadcn@latest add https://starknightt.github.io/Splash-Cursor/r/splash-cursor.json";
 
 function CopyButton({ text }) {
   const [copied, setCopied] = useState(false);

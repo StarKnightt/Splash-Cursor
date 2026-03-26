@@ -1,25 +1,21 @@
 # Splash Cursor
 
-A buttery-smooth fluid simulation cursor effect built with WebGL, React, and Tailwind CSS. Drop it into any React project as a shadcn component.
+A buttery-smooth fluid simulation cursor effect built with WebGL and React. Zero external dependencies — drop it into any React project.
 
-![Splash Cursor](https://img.shields.io/badge/React-Component-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+![React](https://img.shields.io/badge/React-Component-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![WebGL](https://img.shields.io/badge/WebGL-Fluid_Sim-orange)
 
 ## Install
 
 ```bash
-npx shadcn@latest add splash-cursor
+npx shadcn@latest add https://starknightt.github.io/Splash-Cursor/r/splash-cursor.json
 ```
 
-Or manually copy the component:
-
-```bash
-npm install
-```
+Or copy `SplashCursor.jsx` directly from [`src/components/SplashCursor.jsx`](src/components/SplashCursor.jsx) into your project.
 
 ## Usage
 
 ```jsx
-import { SplashCursor } from "./components/SplashCursor";
+import { SplashCursor } from "@/components/splash-cursor";
 
 function App() {
   return (
@@ -52,9 +48,9 @@ function App() {
 
 ## Tech Stack
 
-- **WebGL** — Fluid dynamics simulation
+- **WebGL** — Fluid dynamics simulation (Navier-Stokes)
 - **React** — Component architecture
-- **Tailwind CSS** — Styling
+- **Tailwind CSS** — Utility styling
 
 ## Development
 
