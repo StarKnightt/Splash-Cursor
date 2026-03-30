@@ -1,5 +1,5 @@
 import { useState, useRef, useCallback } from "react";
-import { SplashCursor } from "./SplashCursor";
+import SplashCursor from "./SplashCursor";
 
 const INSTALL_CMD = "npx shadcn@latest add https://starknightt.github.io/Splash-Cursor/r/splash-cursor.json";
 
@@ -56,7 +56,6 @@ function Header({ theme, toggleTheme }) {
       style={{ backgroundColor: "var(--bg)" }}
     >
       <SplashCursor
-        key={theme}
         BACK_COLOR={theme === "light" ? lightBg : darkBg}
         DENSITY_DISSIPATION={3.5}
         VELOCITY_DISSIPATION={2}
@@ -65,7 +64,6 @@ function Header({ theme, toggleTheme }) {
         CURL={3}
         COLOR_UPDATE_SPEED={10}
         TRANSPARENT={true}
-        className="z-20"
       />
 
       {/* Theme toggle */}

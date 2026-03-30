@@ -13,7 +13,7 @@ function SplashCursor({
   SPLAT_FORCE = 6000,
   SHADING = true,
   COLOR_UPDATE_SPEED = 10,
-  BACK_COLOR = { r: 0.5, g: 0, b: 0 },
+  BACK_COLOR = { r: 0, g: 0, b: 0 },
   TRANSPARENT = true,
   className = "",
 }) {
@@ -1029,10 +1029,26 @@ function SplashCursor({
   ]);
 
   return (
-    <div className={`fixed top-0 left-0 pointer-events-none ${className}`}>
-      <canvas ref={canvasRef} id="fluid" className="w-screen h-screen" />
+    <div
+      className={className}
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        zIndex: 9999,
+        pointerEvents: "none",
+      }}
+    >
+      <canvas
+        ref={canvasRef}
+        style={{
+          width: "100vw",
+          height: "100vh",
+        }}
+      />
     </div>
   );
 }
 
+export default SplashCursor;
 export { SplashCursor };
